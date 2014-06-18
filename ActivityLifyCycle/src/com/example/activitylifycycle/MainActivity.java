@@ -19,6 +19,8 @@ public class MainActivity extends Activity{
 	private Button jumpBtn;
 	
 	private Button popDialogBtn;
+	
+	private Button toListBtn;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +29,7 @@ public class MainActivity extends Activity{
 		
 		jumpBtn = (Button)findViewById(R.id.jump);
 		popDialogBtn = (Button)findViewById(R.id.dialog);
+		toListBtn= (Button)findViewById(R.id.list);
 		
 		jumpBtn.setOnClickListener(new OnClickListener() {
 			@Override
@@ -43,9 +46,17 @@ public class MainActivity extends Activity{
 			public void onClick(View v) {
 				Intent in = new Intent(MainActivity.this, LogService.class);
 				startService(in);
-				stopService(in);
 				//显示DiaLog
 				ProgressDialog.show(MainActivity.this, "a", "a", true, true);
+			}
+		});
+		
+		toListBtn.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent in = new Intent(MainActivity.this, ListActivity.class);
+				startActivity(in);
 			}
 		});
 		

@@ -26,8 +26,13 @@
             android:name="com.example.activitylifycycle.SecondActivity"
             android:label="@string/title_activity_second" >
         </activity>
-        
+
         <service android:name="com.example.activitylifycycle.service.LogService" />
+
+        <activity
+            android:name="com.example.activitylifycycle.ListActivity"
+            android:label="@string/title_activity_list" >
+        </activity>
     </application>
 
 </manifest>
