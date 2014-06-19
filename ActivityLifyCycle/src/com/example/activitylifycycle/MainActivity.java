@@ -55,7 +55,7 @@ public class MainActivity extends Activity{
 			
 			@Override
 			public void onClick(View v) {
-				Intent in = new Intent(MainActivity.this, ListActivity.class);
+				Intent in = new Intent(MainActivity.this, SecondListActivity.class);
 				startActivity(in);
 			}
 		});

@@ -9,5 +9,6 @@
     <string name="dialog">dialog</string>
     <string name="tolist">tolist</string>
     <string name="title_activity_list">ListActivity</string>
+    <string name="title_activity_second_list">SecondListActivity</string>
 
 </resources>
